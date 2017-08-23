@@ -28,71 +28,96 @@ import java.util.*;
  * @since 27/06/2017
  */
 public class WordLadderII {
-    public List<List<String>> findLaddersBruteForce(String beginWord, String endWord, List<String> wordList) {
-        Map<String, List<String>> oneDistanceMap = new HashMap<>();
-        if (!wordList.contains(endWord)) {
+
+    public List<List<String>> findLaddersDp(String beginWord, String endWord, List<String> wordList) {
+        wordList.remove(beginWord);
+        int endWordIndex = wordList.indexOf(endWord);
+        if (endWordIndex < 0) {
             return Collections.emptyList();
         }
-        wordList.remove(beginWord);
-        List<String> beginOneDistanceList = new LinkedList<>();
-        oneDistanceMap.put(beginWord, beginOneDistanceList);
+        int[][] lastIndex = new int[wordList.size()][];
+        int[] distance = new int[wordList.size()];
+        for (int i = 0; i < distance.length; i++) {
+            distance[i] = Integer.MAX_VALUE;
+        }
+        Map<String, Set<Integer>> oneDistanceMap = new HashMap<>();
+        Set<String> usedWord = new HashSet<>();
+        Stack<Integer> indexStack = new Stack<>();
         for (int i = 0; i < wordList.size(); i++) {
             String word = wordList.get(i);
             if (isOneWordDifferent(beginWord, word)) {
-                beginOneDistanceList.add(word);
-            }
-            for (int j = i + 1; j < wordList.size(); j++) {
-                String compareWord = wordList.get(j);
-                if (!isOneWordDifferent(word, compareWord)) {
-                    continue;
-                }
-                List<String> oneDistanceList = oneDistanceMap.get(word);
-                if (oneDistanceList == null) {
-                    oneDistanceList = new LinkedList<>();
-                    oneDistanceMap.put(word, oneDistanceList);
-                }
-                oneDistanceList.add(compareWord);
-                List<String> compareList = oneDistanceMap.get(compareWord);
-                if (compareList == null) {
-                    compareList = new LinkedList<>();
-                    oneDistanceMap.put(compareWord, compareList);
-                }
-                compareList.add(word);
+                indexStack.push(i);
+                lastIndex[i] = new int[]{-1};
+                distance[i] = 1;
+                usedWord.add(word);
             }
         }
+        while (!indexStack.isEmpty()) {
+            int index = indexStack.pop();
+            String currentWord = wordList.get(index);
+            if (usedWord.contains(currentWord)) {
+                continue;
+            }
+            Set<Integer> oneDistance = oneDistanceMap.get(currentWord);
+            if (oneDistance == null) {
+                oneDistance = new HashSet<>();
+                oneDistanceMap.put(currentWord, oneDistance);
+                for (int i = 0; i < wordList.size(); i++) {
+                    String word = wordList.get(i);
+                    if (isOneWordDifferent(currentWord, word)) {
+                        oneDistance.add(i);
+                    }
+                }
+            }
+            for (Integer oneDistanceIndex : oneDistance) {
+                if (distance[index] + 1 < distance[oneDistanceIndex]) {
+                    distance[oneDistanceIndex] = distance[index] + 1;
+                    lastIndex[oneDistanceIndex] = new int[]{index};
+                    indexStack.push(oneDistanceIndex);
+                } else if (distance[index] + 1 == distance[oneDistanceIndex]) {
+                    boolean isContain = false;
+                    for (int existIndex : lastIndex[oneDistanceIndex]) {
+                        if (existIndex == index) {
+                            isContain = true;
+                            break;
+                        }
+                    }
+                    if (isContain) {
+                        continue;
+                    }
+                    int[] lastIndexList = new int[lastIndex[oneDistanceIndex].length + 1];
+                    System.arraycopy(lastIndex[oneDistanceIndex], 0, lastIndexList, 0, lastIndex[oneDistanceIndex].length);
+                    lastIndexList[lastIndex[oneDistanceIndex].length] = index;
+                    lastIndex[oneDistanceIndex] = lastIndexList;
+                    indexStack.push(oneDistanceIndex);
+                }
+            }
+        }
+
         List<List<String>> result = new LinkedList<>();
-        findTransfer(beginWord, endWord, Collections.singletonList(beginWord), oneDistanceMap, result);
+        if (lastIndex[endWordIndex] != null) {
+            findPath(lastIndex, wordList, endWordIndex, new LinkedList<>(), result);
+        }
+        for (List<String> soloResult : result) {
+            soloResult.add(0, beginWord);
+        }
         return result;
     }
 
-    private void findTransfer(String currentWord, String endWord, List<String> currentList, Map<String, List<String>> oneDistanceMap, List<List<String>> result) {
-        if (currentWord.equals(endWord)) {
-            if (result.isEmpty()) {
-                result.add(currentList);
-            } else {
-                if (currentList.size() < result.get(0).size()) {
-                    result.clear();
-                    result.add(currentList);
-                } else if (currentList.size() == result.get(0).size()) {
-                    result.add(currentList);
-                }
+    private void findPath(int[][] lastIndexes, List<String> wordList, int index, List<String> temp, List<List<String>> result) {
+        if (index == -1) {
+            result.add(temp);
+            return;
+        }
+        temp.add(0, wordList.get(index));
+        int[] tempLastIndexes = lastIndexes[index];
+        if (tempLastIndexes.length == 1) {
+            findPath(lastIndexes, wordList, tempLastIndexes[0], temp, result);
+        } else {
+            for (int tempIndex : tempLastIndexes) {
+                List<String> path = new LinkedList<>(temp);
+                findPath(lastIndexes, wordList, tempIndex, path, result);
             }
-            return;
-        }
-        if (!result.isEmpty() && currentList.size() >= result.get(0).size()) {
-            return;
-        }
-        List<String> oneDistanceList = oneDistanceMap.get(currentWord);
-        if (oneDistanceList == null || oneDistanceList.isEmpty()) {
-            return;
-        }
-        for (String oneDistance : oneDistanceList) {
-            if (currentList.contains(oneDistance)) {
-                continue;
-            }
-            List<String> wordList = new LinkedList<>(currentList);
-            wordList.add(oneDistance);
-            findTransfer(oneDistance, endWord, wordList, oneDistanceMap, result);
         }
     }
 

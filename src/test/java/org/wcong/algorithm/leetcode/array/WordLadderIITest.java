@@ -7,9 +7,9 @@ import java.util.*;
 
 /**
  * @author wcong<wc19920415@gmail.com>
- *         "qa"
- *         "sq"
- *         ["si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"]
+ * "qa"
+ * "sq"
+ * ["si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"]
  * @since 27/06/2017
  */
 public class WordLadderIITest {
@@ -17,11 +17,12 @@ public class WordLadderIITest {
     @Test
     public void testFindLadders() {
         WordLadderII solution = new WordLadderII();
-        List<List<String>> answer = solution.findLaddersBruteForce("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"));
+        List<List<String>> answer = solution.findLaddersDp("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"));
         List<List<String>> compare = Arrays.asList(Arrays.asList("hit", "hot", "dot", "dog", "cog"), Arrays.asList("hit", "hot", "lot", "log", "cog"));
         Assert.assertTrue(isArrayEqual(answer, compare));
-        Assert.assertTrue(isArrayEqual(solution.findLaddersBruteForce("a", "c", new ArrayList<>(Arrays.asList("a", "b", "c"))), Collections.singletonList(Arrays.asList("a", "c"))));
-
+        Assert.assertTrue(isArrayEqual(solution.findLaddersDp("a", "c", new ArrayList<>(Arrays.asList("a", "b", "c"))), Collections.singletonList(Arrays.asList("a", "c"))));
+        Assert.assertTrue(isArrayEqual(solution.findLaddersDp("red", "tax", new ArrayList<>(Arrays.asList("ted", "tex", "red", "tax", "tad", "den", "rex", "pee"))),
+                new ArrayList<>(Arrays.asList(Arrays.asList("red", "ted", "tad", "tax"), Arrays.asList("red", "ted", "tex", "tax"), Arrays.asList("red", "rex", "tex", "tax")))));
     }
 
     private boolean isArrayEqual(List<List<String>> list1, List<List<String>> list2) {
