@@ -1,4 +1,4 @@
-package org.wcong.algorithm.ctci;
+package org.wcong.algorithm.ctci.moderate;
 
 import org.junit.Test;
 import org.wcong.algorithm.ctci.moderate.ContiguousSequence;

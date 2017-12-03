@@ -1,4 +1,4 @@
-package org.wcong.algorithm.ctci;
+package org.wcong.algorithm.ctci.moderate;
 
 /**
  * implement add, subtract, multiply ,divide
