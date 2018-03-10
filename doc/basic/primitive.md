@@ -13,7 +13,7 @@ bit|byte|short|int|long|float|double|char
 * *^*:Bitwise exclusive OR
 * *|*:Bitwise inclusive OR
 
-### key points
+### key Points
 * be very comfortable with bitwise operation, especially xor ^
     * *org.wcong.algorithm.epi.primitive.SwapBits*
     * x & (x - 1) clears the lowest set bit in x
