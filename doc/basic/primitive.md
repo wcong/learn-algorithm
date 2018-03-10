@@ -9,7 +9,7 @@ bit|byte|short|int|long|float|double|char
 * *<<*:Signed left shift
 * *>>*:Signed right shift
 * *>>>*:Unsigned right shift
-* \& Bitwise AND
+* *&* Bitwise AND
 * *^*:Bitwise exclusive OR
 * *|*:Bitwise inclusive OR
 
