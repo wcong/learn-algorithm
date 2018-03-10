@@ -31,6 +31,22 @@ public class DutchNationalFlagProblem {
             lessIndex += 1;
             moreIndex -= 1;
         }
+        moreIndex = array.length - 1;
+        while (lessIndex < moreIndex) {
+            if (array[lessIndex] <= pivot) {
+                lessIndex += 1;
+                continue;
+            }
+            if (array[moreIndex] > pivot) {
+                moreIndex -= 1;
+                continue;
+            }
+            int temp = array[lessIndex];
+            array[lessIndex] = array[moreIndex];
+            array[moreIndex] = temp;
+            lessIndex += 1;
+            moreIndex -= 1;
+        }
         return array;
     }
 
