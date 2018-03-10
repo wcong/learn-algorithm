@@ -16,10 +16,10 @@ public class ParityOfWord {
     public boolean parityOfWord(long word) {
         int numberOf1 = 0;
         while (word != 0) {
-            numberOf1 += (word & 1);
-            word >>>= word;
+            numberOf1 += 1;
+            word = word & (word - 1);
         }
-        return (numberOf1 & 1) == 1;
+        return (numberOf1 & 1) == 0;
     }
 
 }
