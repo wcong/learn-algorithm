@@ -12,7 +12,7 @@ package org.wcong.algorithm.epi.primitive;
  */
 public class Multiplication {
 
-    public int mutiplication(int x, int y) {
+    public int multiplication(int x, int y) {
         int result = 0;
         int base = 0;
         while (y > 0) {

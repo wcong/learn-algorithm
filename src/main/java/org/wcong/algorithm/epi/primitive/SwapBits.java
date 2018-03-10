@@ -2,7 +2,7 @@ package org.wcong.algorithm.epi.primitive;
 
 /**
  * Implement code that takes as input a 64-bit integer and swaps the bits at indices i and y.
- *
+ * <p>
  * 1 brute force O(1)
  *
  * @author wcong<wc19920415@gmail.com>
@@ -11,16 +11,13 @@ package org.wcong.algorithm.epi.primitive;
 public class SwapBits {
 
     public long swapBit(long number, int i, int j) {
-        if (i < j) {
-            int temp = i;
-            i = j;
-            j = temp;
+        i -= 1;
+        j -= 1;
+        if (((number >> i) & 1) != ((number >> j) & 1)) {
+            int bitMasks = (1 << j) | (1 << i);
+            number ^= bitMasks;
         }
-        long first = number & (1 << i);
-        long second = number & (1 << j);
-        first = first >> (i - j);
-        second = second << (i - j);
-        return number & ~(1 << i) & second & ~(1 << j) & first;
+        return number;
     }
 
 }

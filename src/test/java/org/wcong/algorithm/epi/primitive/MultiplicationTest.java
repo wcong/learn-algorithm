@@ -11,7 +11,7 @@ public class MultiplicationTest {
     @Test
     public void testMultiplication() {
         Multiplication multiplication = new Multiplication();
-        assert multiplication.mutiplication(4, 5) == 20;
+        assert multiplication.multiplication(4, 5) == 20;
     }
 
 }
