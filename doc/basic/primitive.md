@@ -1,5 +1,9 @@
 ### Summary
-You should know the primitive types very intimately, e.g., sizes, ranges, signedness properties, and operators.
+You should know the primitive types very intimately
+* sizes
+* ranges
+* signedness properties: positive and non-positive
+* operators.
 
 bit|byte|short|int|long|float|double|char
 ---|---|---|---|---|---|---|---|
