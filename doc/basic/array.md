@@ -10,5 +10,6 @@
 * Be comfortable with writing code that operates on subarrays.
     * *org.wcong.algorithm.epi.array.onedimension.NextPermutation*
 * It's incredibly easy to make off-by-1 errors when operating on arrays.
+    * *org.wcong.algorithm.epi.array.onedimension.AdvanceThroughArray*
 * Don't worry about preserving the integrity of the array (sortedness, keeping equal entries together, etc.) until it is time to return
 * 
