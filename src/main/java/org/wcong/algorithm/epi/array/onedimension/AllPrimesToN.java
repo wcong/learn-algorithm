@@ -5,4 +5,7 @@ package org.wcong.algorithm.epi.array.onedimension;
  * @since 27/02/2018
  */
 public class AllPrimesToN {
+
+
+
 }
