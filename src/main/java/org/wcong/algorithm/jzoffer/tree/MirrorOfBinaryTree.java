@@ -1,7 +1,8 @@
 package org.wcong.algorithm.jzoffer.tree;
 
-import org.wcong.test.algorithm.jzoffer.util.Tree;
-import org.wcong.test.algorithm.jzoffer.util.TreeNode;
+
+import org.wcong.algorithm.jzoffer.util.Tree;
+import org.wcong.algorithm.jzoffer.util.TreeNode;
 
 /**
  * test for binary tree

@@ -1,6 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.springframework.util.Assert;
 
 /**
  * test for array
@@ -12,9 +11,9 @@ public class FindInTwoDimension {
 
     public static void main(String[] args) {
         int[][] findMatrix = new int[][]{{1, 4, 7, 10, 13}, {2, 5, 8, 16, 17}, {3, 6, 9, 12, 15}};
-        Assert.isTrue(findInTwoDimensionLogN(findMatrix, 5));
-        Assert.isTrue(!findInTwoDimensionLogN(findMatrix, 11));
-        Assert.isTrue(!findInTwoDimensionLogN(null, 11));
+        assert findInTwoDimensionLogN(findMatrix, 5);
+        assert !findInTwoDimensionLogN(findMatrix, 11);
+        assert !findInTwoDimensionLogN(null, 11);
     }
 
     public static boolean findInDimensionBigON(int[][] matrix, int target) {

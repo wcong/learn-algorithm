@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.tree;
 
-import org.springframework.util.Assert;
-
 import java.util.Stack;
 
 /**
@@ -14,7 +12,7 @@ public class ConstructBinaryTree {
 
 
     public static void main(String[] args) {
-        Assert.isTrue(constructBinaryTree("12473568", "47215386").preOrderString().equals("12473568"));
+        assert (constructBinaryTree("12473568", "47215386").preOrderString().equals("12473568"));
     }
 
     static class BinaryTreeNode {
@@ -92,8 +90,8 @@ public class ConstructBinaryTree {
             }
             leftIndex += 1;
         }
-        node.left = buildTree(preOrderArray, preOrderArrayLeft + 1, preOrderArrayLeft+leftIndex-inOrderArrayLeft, inOrderArray, inOrderArrayLeft, leftIndex - 1);
-        node.right = buildTree(preOrderArray, preOrderArrayLeft+leftIndex-inOrderArrayLeft + 1, preOrderArrayRight, inOrderArray, leftIndex + 1, inOrderArrayRight);
+        node.left = buildTree(preOrderArray, preOrderArrayLeft + 1, preOrderArrayLeft + leftIndex - inOrderArrayLeft, inOrderArray, inOrderArrayLeft, leftIndex - 1);
+        node.right = buildTree(preOrderArray, preOrderArrayLeft + leftIndex - inOrderArrayLeft + 1, preOrderArrayRight, inOrderArray, leftIndex + 1, inOrderArrayRight);
         return node;
     }
 

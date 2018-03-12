@@ -1,6 +1,7 @@
 package org.wcong.algorithm.jzoffer.linked_list;
 
-import org.wcong.test.algorithm.jzoffer.util.ComplexListNode;
+
+import org.wcong.algorithm.jzoffer.util.ComplexListNode;
 
 /**
  * test for linked list

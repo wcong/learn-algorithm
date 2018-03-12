@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.springframework.util.Assert;
-
 import java.util.Arrays;
 
 /**
@@ -12,12 +10,12 @@ import java.util.Arrays;
 public class MinNumInRotateArray {
 
     public static void main(String[] args) {
-        Assert.isTrue(Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 2), new int[]{6, 7, 1, 2, 3, 4, 5}));
-        Assert.isTrue(Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 5), new int[]{3, 4, 5, 6, 7, 1, 2}));
-        Assert.isTrue(Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 4), new int[]{5, 6, 7, 8, 1, 2, 3, 4}));
-        Assert.isTrue(findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 4))==1);
-        Assert.isTrue(findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 5))==1);
-        Assert.isTrue(findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 2))==1);
+        assert (Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 2), new int[]{6, 7, 1, 2, 3, 4, 5}));
+        assert (Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 5), new int[]{3, 4, 5, 6, 7, 1, 2}));
+        assert (Arrays.equals(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 4), new int[]{5, 6, 7, 8, 1, 2, 3, 4}));
+        assert (findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 4)) == 1);
+        assert (findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 5)) == 1);
+        assert (findMinNumForRotateArray(rotateArray(new int[]{1, 2, 3, 4, 5, 6, 7}, 2)) == 1);
     }
 
     //  example 12345678 34567812

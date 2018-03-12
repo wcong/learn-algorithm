@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.stack;
 
-import org.springframework.util.Assert;
-
 import java.util.Stack;
 
 /**
@@ -18,10 +16,10 @@ public class TwoStackForQueue {
         stackQueue.push(2);
         stackQueue.push(3);
         stackQueue.push(4);
-        Assert.isTrue(stackQueue.pop() == 1);
-        Assert.isTrue(stackQueue.pop() == 2);
-        Assert.isTrue(stackQueue.pop() == 3);
-        Assert.isTrue(stackQueue.pop() == 4);
+        assert (stackQueue.pop() == 1);
+        assert (stackQueue.pop() == 2);
+        assert (stackQueue.pop() == 3);
+        assert (stackQueue.pop() == 4);
     }
 
 

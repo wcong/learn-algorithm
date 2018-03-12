@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.dp;
 
-import org.eclipse.core.runtime.Assert;
-
 /**
  * test for recursive and numbers
  * Created by wcong on 2017/3/24.
@@ -9,9 +7,9 @@ import org.eclipse.core.runtime.Assert;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        Assert.isTrue(fibonacci(2) == 2);
-        Assert.isTrue(fibonacci(4) == 5);
-        Assert.isTrue(fibonacci(6) == 13);
+        assert (fibonacci(2) == 2);
+        assert (fibonacci(4) == 5);
+        assert (fibonacci(6) == 13);
     }
 
     static int fibonacci(int n) {

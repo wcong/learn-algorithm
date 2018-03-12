@@ -1,8 +1,9 @@
 package org.wcong.algorithm.jzoffer.tree;
 
-import org.wcong.test.algorithm.jzoffer.util.BuildTree;
-import org.wcong.test.algorithm.jzoffer.util.Tree;
-import org.wcong.test.algorithm.jzoffer.util.TreeNode;
+
+import org.wcong.algorithm.jzoffer.util.BuildTree;
+import org.wcong.algorithm.jzoffer.util.Tree;
+import org.wcong.algorithm.jzoffer.util.TreeNode;
 
 /**
  * test for tree and dqueue TODO

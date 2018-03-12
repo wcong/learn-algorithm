@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.dp;
 
-import org.eclipse.core.runtime.Assert;
-
 /**
  * test for number and divide and conquer
  * give a number n count all the 1 appear from 1 to n;
@@ -11,8 +9,8 @@ import org.eclipse.core.runtime.Assert;
 public class NumberOf1BeforeN {
 
     public static void main(String[] args) {
-        Assert.isTrue(count1(11) == 4);
-        Assert.isTrue(count1(21) == 13);
+        assert (count1(11) == 4);
+        assert (count1(21) == 13);
     }
 
     // for example 11 have 4 : 1 10 11 , 21 have 13

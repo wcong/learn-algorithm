@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.dp;
 
-import org.springframework.util.Assert;
-
 /**
  * test for number
  * ugly number only contains 2,3,4 for multiply count target number of ugly number
@@ -10,8 +8,8 @@ import org.springframework.util.Assert;
 public class UglyNumber {
 
     public static void main(String[] args) {
-        Assert.isTrue(nThUglyNumber(9) == 12);
-        Assert.isTrue(nThUglyNumber(10) == 15);
+        assert (nThUglyNumber(9) == 12);
+        assert (nThUglyNumber(10) == 15);
     }
 
     public static int nThUglyNumber(int n) {

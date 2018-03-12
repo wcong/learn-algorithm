@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.springframework.util.Assert;
-
 /**
  * test for string
  * give a string replace all blank by %20
@@ -10,7 +8,7 @@ import org.springframework.util.Assert;
 public class ReplaceBlank {
 
     public static void main(String[] args) {
-        Assert.isTrue(replaceString("abs as  das ").equals("abs%20as%20%20das%20"));
+        assert (replaceString("abs as  das ").equals("abs%20as%20%20das%20"));
     }
 
     public static String replaceString(String oldString) {

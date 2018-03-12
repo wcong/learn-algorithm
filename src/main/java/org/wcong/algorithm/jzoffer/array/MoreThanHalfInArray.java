@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.eclipse.core.runtime.Assert;
-
 /**
  * test for array
  * give a array and there is a num appear more than a half find it
@@ -10,7 +8,7 @@ import org.eclipse.core.runtime.Assert;
 public class MoreThanHalfInArray {
 
     public static void main(String[] args) {
-        Assert.isTrue(halfNum(new int[]{1, 2, 1, 1, 3, 1, 4}) == 1);
+        assert (halfNum(new int[]{1, 2, 1, 1, 3, 1, 4}) == 1);
     }
 
     public static int halfNum(int[] array) {

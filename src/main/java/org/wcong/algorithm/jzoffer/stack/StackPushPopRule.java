@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.stack;
 
-import org.springframework.util.Assert;
-
 /**
  * test for stack operation
  * give two array of integer,first is the order of push,judge second is the one of the order of pop
@@ -13,8 +11,8 @@ import org.springframework.util.Assert;
 public class StackPushPopRule {
 
     public static void main(String[] args) {
-        Assert.isTrue(isPopToPush(new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1}));
-        Assert.isTrue(!isPopToPush(new int[]{1, 2, 3, 4, 5}, new int[]{4, 3, 5, 1, 2}));
+        assert (isPopToPush(new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1}));
+        assert (!isPopToPush(new int[]{1, 2, 3, 4, 5}, new int[]{4, 3, 5, 1, 2}));
     }
 
     public static boolean isPopToPush(int[] pushArray, int[] popArray) {

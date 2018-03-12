@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.springframework.util.Assert;
-
 /**
  * test for array and recursive  TODO
  * Created by wcong on 2017/3/28.
@@ -9,7 +7,7 @@ import org.springframework.util.Assert;
 public class ReverseOrderPareInArray {
 
     public static void main(String[] args) {
-        Assert.isTrue(reversPairsCount(new int[]{7, 5, 6, 4}) == 5);
+        assert (reversPairsCount(new int[]{7, 5, 6, 4}) == 5);
     }
 
     public static int reversPairsCount(int[] array) {

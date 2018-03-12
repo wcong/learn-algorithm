@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.tree;
 
-import org.springframework.util.Assert;
-
 /**
  * test for binary search tree post-order walk analysis
  * give a array of integer judge is binary search tree post-order walk
@@ -13,8 +11,8 @@ import org.springframework.util.Assert;
 public class BinaryTreePostOrderWalkRule {
 
     public static void main(String[] args) {
-        Assert.isTrue(isBinarySearchTree(new int[]{5, 7, 6, 9, 11, 10, 8}));
-        Assert.isTrue(!isBinarySearchTree(new int[]{7, 4, 6, 5}));
+        assert (isBinarySearchTree(new int[]{5, 7, 6, 9, 11, 10, 8}));
+        assert (!isBinarySearchTree(new int[]{7, 4, 6, 5}));
     }
 
     public static boolean isBinarySearchTree(int[] array) {

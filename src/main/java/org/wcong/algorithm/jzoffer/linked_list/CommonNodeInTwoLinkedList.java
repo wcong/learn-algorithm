@@ -1,8 +1,8 @@
 package org.wcong.algorithm.jzoffer.linked_list;
 
-import org.springframework.util.Assert;
-import org.wcong.test.algorithm.jzoffer.util.BuildLinkedList;
-import org.wcong.test.algorithm.jzoffer.util.LinkedListNode;
+
+import org.wcong.algorithm.jzoffer.util.BuildLinkedList;
+import org.wcong.algorithm.jzoffer.util.LinkedListNode;
 
 /**
  * test for linked list
@@ -12,7 +12,7 @@ import org.wcong.test.algorithm.jzoffer.util.LinkedListNode;
 public class CommonNodeInTwoLinkedList {
 
     public static void main(String[] args) {
-        Assert.isTrue(commmoNode(BuildLinkedList.makeOne(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}).root, BuildLinkedList.makeOne(new int[]{11, 12, 12, 14, 5, 6, 7, 8, 9}).root) == 5);
+        assert (commmoNode(BuildLinkedList.makeOne(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}).root, BuildLinkedList.makeOne(new int[]{11, 12, 12, 14, 5, 6, 7, 8, 9}).root) == 5);
     }
 
     public static int commmoNode(LinkedListNode list1, LinkedListNode list2) {

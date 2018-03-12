@@ -1,7 +1,5 @@
 package org.wcong.algorithm.jzoffer.array;
 
-import org.springframework.util.Assert;
-
 import java.util.Arrays;
 
 /**
@@ -13,8 +11,8 @@ import java.util.Arrays;
 public class SortedArraySumTarget {
 
     public static void main(String[] args) {
-        Assert.isTrue(Arrays.equals(sumTarget(new int[]{1, 2, 4, 7, 11, 15}, 12), new int[]{0, 4}));
-        Assert.isTrue(Arrays.equals(sumTarget(new int[]{1, 2, 4, 7, 11, 15}, 11), new int[]{2, 3}));
+        assert (Arrays.equals(sumTarget(new int[]{1, 2, 4, 7, 11, 15}, 12), new int[]{0, 4}));
+        assert (Arrays.equals(sumTarget(new int[]{1, 2, 4, 7, 11, 15}, 11), new int[]{2, 3}));
     }
 
     public static int[] sumTarget(int[] array, int target) {
