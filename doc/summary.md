@@ -4,10 +4,10 @@ how to solve a problem
 |step|describe|
 |---|---|
 |Concrete examples|Manually solve concrete instances of the problem and then build a general solution.|
+|Graph modeling|Describe the problem using a graph and solve it using an existing algorithm.|
 |Case analysis|Split the input/execution into a number of cases and solve each case in isolation.| 
 |Iterative refinement|Most problems can be solved using a brute-force approach. Find such a solution and improve upon it.|
 |Reduction|Use a well-known solution to some other problem as a subroutine.|
-|Graph modeling|Describe the problem using a graph and solve it using an existing algorithm.|
 
 ### data structure
 #### primitive
