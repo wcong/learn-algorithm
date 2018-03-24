@@ -33,6 +33,6 @@ bit|byte|short|int|long|float|double|char
     * ** 
     
 ### practice
-* Be very familiar with the bit-wise operators such as 6&4,1 1 2, 8»1, -16»>2, 1«18, “8, 15'x.
+* Be very familiar with the bit-wise operators such as 6&4,1 1 2, 8>>1, -16>>>2, <<18, ~8, 15^x.
 
 
