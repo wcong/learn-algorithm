@@ -5,7 +5,7 @@
 * horizontal/vertical scaling 
     * Vertical scaling means increasing the resources of a specific node.add additional memory to a server to improve its ability to handle load changes.
     * Horizontal scaling means increasing the number of nodes.add additional servers, thus decreasing the load on any one server. 
-* load balance   load balancer allows a system to distribute the load evenly
+* Load Balance   load balancer allows a system to distribute the load evenly
 * Database Denormalization and NoSQL 
     * avoid join 
     * redundant 
@@ -26,3 +26,10 @@
     * throughput
     * latency              
 * MapReduce
+
+#### Considerations
+
+* Failures
+* Availability and Reliability
+* Read-heavy vs. Write-heavy
+* Security

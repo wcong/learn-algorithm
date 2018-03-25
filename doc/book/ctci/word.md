@@ -21,4 +21,5 @@
 * redundant  [rɪˈdʌndənt] 多余的，累赘的
 * rapid  [ˈræpɪd] 快速的;
 * scaling  ['skeɪlɪŋ] 缩放比例
+* queue [kju] 行列
 
