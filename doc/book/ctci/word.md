@@ -13,6 +13,12 @@
 * muddle [ˈmʌdl:] 困惑;混乱，杂乱
 * calculus [ˈkælkjələs] 结石;[数]运算
 * luxury  [ˈlʌɡʒəri, ˈlʌkʃə-]  奢侈，豪华;
-
-
+* estimate [ˈɛstəˌmet]  估计，预测;
+* explicitly [ɪk'splɪsɪtlɪ] 明白地，明确地
+* analytics  [ˌænə'lɪtɪks]  分析学，解析学，分析论
+* forum [ˈfɔrəm] 论坛，讨论会，专题
+* horizontal  [ˌhɔ:rəˈzɑ:ntl]  水平的，卧式的
+* redundant  [rɪˈdʌndənt] 多余的，累赘的
+* rapid  [ˈræpɪd] 快速的;
+* scaling  ['skeɪlɪŋ] 缩放比例
 

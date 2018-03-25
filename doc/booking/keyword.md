@@ -9,3 +9,4 @@
 * minus/add
 * multiply/divide
 * recursively 
+* modulus
