@@ -22,4 +22,8 @@
 * rapid  [ˈræpɪd] 快速的;
 * scaling  ['skeɪlɪŋ] 缩放比例
 * queue [kju] 行列
+* tackle [ˈtækəl] 着手处理;
+* ambiguous  [æmˈbɪɡjuəs] 模棱两可
+
+
 

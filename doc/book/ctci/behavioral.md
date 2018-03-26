@@ -4,7 +4,7 @@ key concept,SAR situation,action result.
 
 |questions|start up|current|
 |---|---|---|
-|challenges|||
+|challenges|from zero to one||
 |mistake/failures|||
 |enjoyed|||
 |leadership|||
