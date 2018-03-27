@@ -24,6 +24,9 @@
 * queue [kju] 行列
 * tackle [ˈtækəl] 着手处理;
 * ambiguous  [æmˈbɪɡjuəs] 模棱两可
+* stale [stel] 陈腐的
+* reside [rɪˈzaɪd] 住，居住 
+* decay  [dɪˈke]  衰败 （使）腐烂
 
 
 
