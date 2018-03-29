@@ -1,5 +1,9 @@
 ### System Design
 
+* scope the problem
+* make reasonable assumption
+* draw main component
+
 #### Key Concept
 
 * horizontal/vertical scaling 

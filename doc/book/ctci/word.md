@@ -27,6 +27,9 @@
 * stale [stel] 陈腐的
 * reside [rɪˈzaɪd] 住，居住 
 * decay  [dɪˈke]  衰败 （使）腐烂
+* rollout ['rəlˌaʊt] 首次展示
+* outline [ˈaʊtˌlaɪn] 概述;略述 
+* character [ˈkærəktɚ] 性格;角色;特点;字母
 
 
 
