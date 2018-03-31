@@ -30,6 +30,11 @@
 * rollout ['rəlˌaʊt] 首次展示
 * outline [ˈaʊtˌlaɪn] 概述;略述 
 * character [ˈkærəktɚ] 性格;角色;特点;字母
+* ASCII ['æskɪ]  American Standard Code for Information Interchange 美国信息交换标准代码
+* constraint  [kənˈstrent]  约束;限制;强制
+* sensitive [ˈsɛnsɪtɪv]  敏感的;
+* palindrome  [ˈpælɪndroʊm] 回文
+* compression [kəmˈprɛʃən] 压缩，压紧
 
 
 
