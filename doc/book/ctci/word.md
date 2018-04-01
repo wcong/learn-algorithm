@@ -35,6 +35,22 @@
 * sensitive [ˈsɛnsɪtɪv]  敏感的;
 * palindrome  [ˈpælɪndroʊm] 回文
 * compression [kəmˈprɛʃən] 压缩，压紧
+* rewind [riˈwaɪnd]  重绕;倒回
+* intersection  [ˌɪntərˈsekʃn] 横断，横切
+* traverse  [trəˈvɜ:rs] 穿过;横贯
+* collide  [kəˈlaɪd] 碰撞
+* astute  [əˈstu:t]  机敏的
+* stack [stæk] 堆成堆
+* prior  [ˈpraɪɚ] 优先的;占先的;在…之前
+* mimic  [ˈmɪmɪk] 摹拟;模仿
+* hop [hɑ:p]  跳上
+* grid  [ɡrɪd] 格子
+* moderate  [ˈmɑ:dərət] 温和的;适度的，中等的;
+* slope [sloʊp] 斜坡;斜率
+* coordinates  [ko'ɔrdəˈnet]  协调;协同;
+* factorial [fækˈtɔriəl, -ˈtor-] 因子的，阶乘的
+* trail [trel] 追踪;拖曳：让…拖或飘扬在后面;拖沓而行;跟在…后面
+* axis [ˈæksɪs] 轴，轴线
 
 
 
