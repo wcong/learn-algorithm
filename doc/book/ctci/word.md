@@ -51,6 +51,7 @@
 * factorial [fækˈtɔriəl, -ˈtor-] 因子的，阶乘的
 * trail [trel] 追踪;拖曳：让…拖或飘扬在后面;拖沓而行;跟在…后面
 * axis [ˈæksɪs] 轴，轴线
+* shuffle [ˈʃʌfəl] 洗牌
 
 
 
