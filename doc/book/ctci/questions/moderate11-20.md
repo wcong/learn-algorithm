@@ -1,21 +1,19 @@
 ### questions
 11. Diving Board: You are building a diving board by placing a bunch of planks of wood end-to-end.
-  There are two types of planks, one of length shorter and one of length longer. You must use
-  exactly K planks of wood. Write a method to generate all possible lengths for the diving board.
-
-
-
-
-
+    There are two types of planks, one of length shorter and one of length longer. 
+    You must use exactly K planks of wood. Write a method to generate all possible lengths for the diving board.
+    * the key point to this is we there are only two type of planks,and we only have k decisions
+      so we iterate from 0 to n, and calculate i shorter amd n-i longer, put them in to a hash set  
 12. Bisect Squares: Given two squares on a two-dimensional plane, find a line that would cut these two
   squares in half. Assume that the top and the bottom sides of the square run parallel to the x-axis.
-13. Best Line: Given a two-dimensional graph with points on it, find a line which passes the most
-  number of points.
+13. Best Line: Given a two-dimensional graph with points on it, find a line which passes the most number of points.
+    * we just iterate through all the line segment in array , and use a hash table to record the common line
 14. Sub Sort: Given an array of integers, write a method to find indices m and n such that if you sorted
   elements m through n, the entire array would be sorted. Minimize n - m (that is, find the smallest
   such sequence).
-15. Contiguous Sequence: You are given an array of integers (both positive and negative). Find the
-  contiguous sequence with the largest sum. Return the sum.
+    * iterate through from start and end to middle, find the first not in ascending way.
+15. Contiguous Sequence: You are given an array of integers (both positive and negative). Find the contiguous sequence with the largest sum. Return the sum.
+    * iterate through the array, keep the current sum of previous sub-array, if it's less than zero,discard it and sum from current.
 16. Pattern Matching: You are given two strings, pattern and value. The pattern string consists of
   just the letters a and b, describing a pattern within a string. For example, the string catcatgocatgo
   matches the pattern aabab (where cat is a and go is b). It also matches patterns like a, ab, and b.
