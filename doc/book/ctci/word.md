@@ -57,6 +57,7 @@
 * condense [kənˈdɛns] 压缩;精简
 * initiative [ɪˈnɪʃətɪv]  倡议;主动性;
 * humility  [hjuˈmɪlɪti] 谦逊，谦恭
+* traversal  ['trævɜ:səl] 往返移动
 
 
 

@@ -1,3 +1,8 @@
+### step
+* define variable
+* operations
+* result
+
 ### initial
 
 * we can create a graph
