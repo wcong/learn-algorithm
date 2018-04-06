@@ -52,6 +52,11 @@
 * trail [trel] 追踪;拖曳：让…拖或飘扬在后面;拖沓而行;跟在…后面
 * axis [ˈæksɪs] 轴，轴线
 * shuffle [ˈʃʌfəl] 洗牌
+* nugget  [ˈnʌɡɪt] 块金，块
+* succinct  [səkˈsɪŋkt]   简明的，简洁的
+* condense [kənˈdɛns] 压缩;精简
+* initiative [ɪˈnɪʃətɪv]  倡议;主动性;
+* humility  [hjuˈmɪlɪti] 谦逊，谦恭
 
 
 

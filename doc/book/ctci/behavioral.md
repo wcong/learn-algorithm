@@ -11,33 +11,29 @@ key concept,SAR situation,action result.
 |conflicts|||
 |what you do differently|||
 
-#### tqmall
-##### challenges
-i build the search system from zero to one, first i use solr in one node for search service,
-but during the iteration of our website, we found some problem
-* it's a single node service, we store all our data and provide service in one machine, if it's fall down, the whole system won't work
-* it's can't change data immediately, every time somethings change, we should do a full-data synchronous.
-so we start to search for solution, and we find elasticsearch, and solr cooperate zookeeper 
-after some comparison is convenient for distribute deployment, and for real-time index problem, we found a binlog subscribe tool ie canal,
-through it we will receive change of data immediately, 
+### basic questions
+* what your weakness
+* what question for the interviewers
 
-##### mistake
-Integer.maxLength
+### project questions
+* structure: nugget->situation->action->result, arrogant others, explore action
+* how explore: step/specific/yourself
+* how to pick: initiative,leadership/empathy/compassion/humility/teamwork 
 
-##### enjoyed
-i have the freedom to decide what technology i can use, 
-the search system is mostly built by me, afterwords, someone join me and do some extra work  
+### STAR
+be able to talk about the challenges, mistakes, technical decisions,
+choices of technologies (and tradeoffs of these), and the things you would do differently
 
-### what are you weaknesses
-sometimes i don't have a good attention to detail. 
-While that's good because it lets me execute quickly, it also means that i sometimes make careless mistakes.
-Because of that, I make sure to always have someone else double check my work.
+### about yourself
+1. Current Role [Headline Only]: "I'm a software engineer at xxx, where I've been doing xxx for the last xxx years:'
+2. college
+3. working experience-> to now -> sprinkles
+4. outside of work-> sprinkles
+5. wrap up: I'm looking now for xxxxx.
 
-### what questions should you ask the interviews
-#### project plan for the company 
-#### radio of tester and developer
-#### most challenge for company
-#### I'm very interesting in scalability and i'd like to learn more about it, what opportunity i can get in you company
-#### i'm nor familiar with technology X, but i'm very interesting in it, can you tell me more about it
- 
+### future plan
+1. i will be a more uprising environment, and keep improving myself
+2. beside the work, i'd like to be part of some great open source project.
+
+
 
