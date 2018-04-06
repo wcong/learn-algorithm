@@ -9,4 +9,3 @@
 * on the longer list, advance its pointer by the difference in lengths
 * move faster runner at a rate of 2 step, slower at a rate of 1 step
 * return the new collision point
- 
