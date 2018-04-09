@@ -56,14 +56,31 @@ in this case, duplicate means every url are identical.
 image a web server for a simply search engine. this server has 100 machine to response search queues.
 which may then call out using process searching to another cluster,
 
+* each machine has a segment of cache based on formula hash(i)%j;
+* we create a hash table which would tell us which cached queries tie to a specific url
+* we could periodically crawl though the cache on each machine to pure caches tied to a specific queries
+* automatic timeout  cache
+
 #### sales rank
 a large e-commercial company wish a list of best-selling product,overall and by category,
 
-1 scope the problem. what's required for the sales rank, what data range, is it should be up-to date
-2 
+1. analysis is expensive, we reduce the select: total record->total sum->old+every weak->old+every day of seven days;
+2. database write is expensive: store in memory,write bulked
+3. join are expensive:store in same table
+4. forget database 
 
 #### financial manager
 explain how you will design a personal financial manager, this system will connect you bank account, 
 analysis your spend habit, and make financial recommendation.
-1 scope the problem, a synchronize , analysis  
+1. bank data synchronizer:when sync,async->split user
+2. categorizer:log file-> group by category and user
+
+#### pastebin
+people enter a piece of text and get a generate randomly url for it
+
+1. store: file-> memory
+2. generating url: udid
+3. analysis:raw data/database/log system
+
+   
  
