@@ -58,6 +58,7 @@
 * initiative [ɪˈnɪʃətɪv]  倡议;主动性;
 * humility  [hjuˈmɪlɪti] 谦逊，谦恭
 * traversal  ['trævɜ:səl] 往返移动
+* millisecond  [ˌmɪlɪˈsɛkənd] 毫秒
 
 
 
