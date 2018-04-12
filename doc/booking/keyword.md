@@ -11,3 +11,4 @@
 * recursively 
 * modulus
 * percent sign
+* factorial
