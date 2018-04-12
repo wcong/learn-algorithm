@@ -59,6 +59,7 @@
 * humility  [hjuˈmɪlɪti] 谦逊，谦恭
 * traversal  ['trævɜ:səl] 往返移动
 * millisecond  [ˌmɪlɪˈsɛkənd] 毫秒
+* multiply  [ˈmʌltəˌplaɪ] 乘;（使）相乘
 
 
 
