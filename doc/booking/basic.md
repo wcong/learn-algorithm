@@ -6,3 +6,8 @@
 * the difference of a and b
 * vice versa
 * this will be split to two different sub-problem
+
+### how to understand problem
+* who
+* relations/operations
+* goal

@@ -21,6 +21,7 @@
   1. create an array of integers, value at index i indicate counts of letters and number from 0 to i
   2. create an hash map ,to map the counts to index arrays
   3. iterate from 0 to n, find the pair of index with the same count, and find the longest distance of pair
+  * brute force: Just go through all subarrays, count the number of As and Bs, and find the longest one that is equal
 6. Count of 2s: Write a method to count the number of 2s that appear in all the numbers between O and n (inclusive).
 7. Baby Names: Each year, the government releases a list of the 10,000 most common baby names
    and their frequencies (the number of babies with that name). The only problem with this is that
@@ -46,6 +47,7 @@
   and 7. Note that 3, 5, and 7 do not have to be factors, but it should not have any other prime factors.
   For example, the first several multiples would be (in order) 1, 3, 5, 7, 9, 15, 21.
   * have three stack
+  * brute force : We have nested for loops
 10. Majority Element: A majority element is an element that makes up more than half of the items in
   an array. Given a positive integers array, find the majority element. If there is no majority element,
   return-1. Do this inO(N) time and 0(1) space.

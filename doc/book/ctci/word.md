@@ -58,6 +58,9 @@
 * initiative [ɪˈnɪʃətɪv]  倡议;主动性;
 * humility  [hjuˈmɪlɪti] 谦逊，谦恭
 * traversal  ['trævɜ:səl] 往返移动
+* synonyms  ['sɪnənɪmz] 同义词
+* circus  [ˈsɜ:rkəs]  马戏，马戏团
+* identical  [aɪˈdɛntɪkəl] 相同的;恒等的;
 
 
 
