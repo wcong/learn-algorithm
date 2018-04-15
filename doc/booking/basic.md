@@ -1,7 +1,7 @@
 ### how to explain a algorithm
 * initial a variable
 * define a loop for iteration
-* i compare a and b find the maximum,minimum 
+* i compare a and b find the greater,smaller 
 * i have two approach/ways of doing it
 * the difference of a and b
 * vice versa
