@@ -10,4 +10,5 @@
 * we use a hash map to count how many times the character appears
 * we iterate the hash map and ensure xxxxx
 * we can check all possible string that are one-way edit distance
-* iterate the matrix and every time we see a xxx 
+* iterate the matrix and every time we see a xxx
+* go through all the sub array  

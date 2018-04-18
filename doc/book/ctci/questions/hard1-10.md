@@ -23,6 +23,7 @@
   3. iterate from 0 to n, find the pair of index with the same count, and find the longest distance of pair
   * brute force: Just go through all subarrays, count the number of As and Bs, and find the longest one that is equal
 6. Count of 2s: Write a method to count the number of 2s that appear in all the numbers between O and n (inclusive).
+  1. three different sub-problem
 7. Baby Names: Each year, the government releases a list of the 10,000 most common baby names
    and their frequencies (the number of babies with that name). The only problem with this is that
    some names have multiple spellings. For example, "John" and ''Jon" are essentially the same name
