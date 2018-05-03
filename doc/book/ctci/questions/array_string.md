@@ -12,3 +12,4 @@
 * we can check all possible string that are one-way edit distance
 * iterate the matrix and every time we see a xxx
 * go through all the sub array  
+* step-wise manner
