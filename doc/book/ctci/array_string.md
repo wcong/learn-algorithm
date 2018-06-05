@@ -7,3 +7,14 @@
 #### resizable array
 * dynamically resize array 
 
+### questions
+1 isUnique:
+array of character
+    * unicode
+        * acscii
+            * number,letters upper case
+            
+public boolean isUnique(String a){
+    
+}
+
