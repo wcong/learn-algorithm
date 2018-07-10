@@ -20,22 +20,20 @@ public class SuccessorInBST {
     }
 
     private void successor(TreeNode node, Status status) {
+        if (node.left != null) {
+            successor(node.left, status);
+        }
         if (status.found) {
             if (status.node == null) {
                 status.node = node;
             }
-        } else {
-            if (status.target < node.x) {
-                successor(node.left, status);
-                if (status.found && status.node == null) {
-                    status.node = node;
-                }
-            } else if (status.target == node.x) {
-                status.found = true;
-                successor(node.right, status);
-            } else {
-                successor(node.right, status);
-            }
+            return;
+        }
+        if (node.x == status.target) {
+            status.found = true;
+        }
+        if (node.right != null) {
+            successor(node.right, status);
         }
     }
 

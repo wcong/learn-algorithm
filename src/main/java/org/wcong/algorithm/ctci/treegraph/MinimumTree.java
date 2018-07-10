@@ -22,7 +22,7 @@ public class MinimumTree {
             node.x = array[start];
             return node;
         } else {
-            int middle = (end - start) / 2;
+            int middle = (end + start) / 2;
             TreeNode node = new TreeNode();
             node.x = array[middle];
             node.left = rootNode(array, start, middle - 1);

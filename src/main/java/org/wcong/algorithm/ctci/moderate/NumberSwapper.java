@@ -19,19 +19,19 @@ package org.wcong.algorithm.ctci.moderate;
  */
 public class NumberSwapper {
 
-    public static class Numbers {
-        public int a;
-        public int b;
 
-        public Numbers(int a, int b) {
-            this.a = a;
-            this.b = b;
-        }
-    }
+    /**
+     * how do you thing a number
+     * 1. in bit represent
+     * 2. in number line represent
+     *
+     * @param a
+     * @param b
+     */
 
-    public void swapNumber(Numbers numbers) {
-        numbers.a = numbers.a ^ numbers.b;
-        numbers.b = numbers.a ^ numbers.b;
-        numbers.a = numbers.a ^ numbers.b;
+    public void swapNumber(int a, int b) {
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
     }
 }

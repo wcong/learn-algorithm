@@ -25,9 +25,6 @@ public class Interception {
         private int x;
         private int y;
     }
-
-    public Point interception(Line line1, Line line2) {
-        return null;
-    }
+    
 
 }

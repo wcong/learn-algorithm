@@ -7,9 +7,7 @@ import java.util.*;
  */
 public class App {
     public static void main(String[] args) {
-        Arrays.asList("das  sdas".split("\\s+"));
-        System.out.println(Arrays.asList("das  sdas".split("\b")));
-
+        System.out.println("a".equals(null));
     }
 
     static class HotelCount {

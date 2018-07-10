@@ -11,11 +11,6 @@ public class NumberSwapperTest {
 
     @Test
     public void testSwapNumber() {
-        NumberSwapper.Numbers numbers = new NumberSwapper.Numbers(1, 3);
-        NumberSwapper numberSwapper = new NumberSwapper();
-        numberSwapper.swapNumber(numbers);
-        assert numbers.a == 3;
-        assert numbers.b == 1;
     }
 
 }
